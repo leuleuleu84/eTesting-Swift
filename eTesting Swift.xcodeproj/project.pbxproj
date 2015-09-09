@@ -198,6 +198,7 @@
 				TargetAttributes = {
 					EBEF1D411B9EB3BB00C70830 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 56AJJ634ZU;
 					};
 					EBEF1D581B9EB3BB00C70830 = {
 						CreatedOnToolsVersion = 7.0;
@@ -398,7 +399,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "eTesting Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "test.eTesting-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,7 +412,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "eTesting Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "test.eTesting-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
