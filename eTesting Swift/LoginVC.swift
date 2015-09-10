@@ -28,10 +28,12 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var inputTextUserName: UITextField!
     @IBOutlet weak var inputTextPassWord: UITextField!
     @IBOutlet weak var buttonLogin: UIButton!
+    
     override func viewDidLoad() {
 
         setupInputBox(inputTextUserName)
         setupInputBox(inputTextPassWord)
+        
         
         let tap = UITapGestureRecognizer(target: self, action: "handleTapToEndEditing:")
         view.addGestureRecognizer(tap)
@@ -86,7 +88,10 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func doLogin(sender: UIButton) {
         
-        if (inputTextUserName.text!.isNullOrHaveWhiteSpace || inputTextPassWord.text!.isNullOrHaveWhiteSpace) {
+        let username = inputTextUserName.text
+        let password = inputTextPassWord.text
+        
+        if (username!.isNullOrHaveWhiteSpace || password!.isNullOrHaveWhiteSpace) {
             let controller = UIAlertController(title: "Lỗi",
                 message: "Vui vòng đăng nhập lại thông tin",
                 preferredStyle: .Alert)
@@ -96,13 +101,25 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             
             self.presentViewController(controller, animated: true, completion: nil)
         }
-        //
+//        let credentialData = "\(username):\(password)".dataUsingEncoding(NSUTF8StringEncoding)!
+//        let base64Credentials = credentialData.base64EncodedStringWithOptions( NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
+//        
+//        let headers = ["Authorization": "Basic \(base64Credentials)"]
+//        
+//        Alamofire.request(.GET, "http://localhost:22333/rest/v1/User/Login", headers: headers)
+//            .responseJSON { _, _, result in
+//                print(result)
+//        }
+        
+        
+        
         Alamofire.request(.POST, "http://10.15.152.56:8686/rest/v1/user/thiendd3/")
            .responseJSON{ _, _, result -> Void in
             
             print("Response String \(result.value)")
             
         }
+        
         
     }
 

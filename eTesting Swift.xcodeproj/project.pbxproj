@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		EB08B3C51B9ED3E10006536F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08B3C41B9ED3E10006536F /* LoginVC.swift */; };
 		EB5503331B9FD5D100A9C125 /* ExamListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503321B9FD5D100A9C125 /* ExamListVC.swift */; };
-		EB5503351BA015A500A9C125 /* ExamListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503341BA015A500A9C125 /* ExamListCell.swift */; settings = {ASSET_TAGS = (); }; };
-		EB5503371BA0212E00A9C125 /* ExamDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503361BA0212E00A9C125 /* ExamDetailTVC.swift */; settings = {ASSET_TAGS = (); }; };
-		EB55033A1BA0259000A9C125 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503391BA0259000A9C125 /* HeaderTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		EB55033C1BA025FF00A9C125 /* ExamBriefTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55033B1BA025FF00A9C125 /* ExamBriefTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		EBD2717A1BA0325A001BF492 /* ExamDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD271791BA0325A001BF492 /* ExamDetailTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		EB5503351BA015A500A9C125 /* ExamListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503341BA015A500A9C125 /* ExamListCell.swift */; };
+		EB5503371BA0212E00A9C125 /* ExamDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503361BA0212E00A9C125 /* ExamDetailTVC.swift */; };
+		EB55033A1BA0259000A9C125 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503391BA0259000A9C125 /* HeaderTableViewCell.swift */; };
+		EB55033C1BA025FF00A9C125 /* ExamBriefTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55033B1BA025FF00A9C125 /* ExamBriefTableViewCell.swift */; };
+		EBD2717A1BA0325A001BF492 /* ExamDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD271791BA0325A001BF492 /* ExamDetailTableViewCell.swift */; };
 		EBEF1D461B9EB3BB00C70830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF1D451B9EB3BB00C70830 /* AppDelegate.swift */; };
 		EBEF1D481B9EB3BB00C70830 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF1D471B9EB3BB00C70830 /* ViewController.swift */; };
 		EBEF1D4B1B9EB3BB00C70830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBEF1D491B9EB3BB00C70830 /* Main.storyboard */; };
@@ -24,6 +24,8 @@
 		EBEF1D771B9EC08500C70830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBEF1D761B9EC08500C70830 /* LaunchScreen.storyboard */; };
 		EBF5C6C31BA144B4004CE701 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF5C6BA1BA1433E004CE701 /* Alamofire.framework */; };
 		EBF5C6C41BA144B4004CE701 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBF5C6BA1BA1433E004CE701 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBF5C6EA1BA17445004CE701 /* ListQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF5C6E91BA17445004CE701 /* ListQuestionVC.swift */; };
+		EBF5C6F11BA1833F004CE701 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF5C6F01BA1833F004CE701 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +124,8 @@
 		EBEF1D6A1B9EB3BB00C70830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBEF1D761B9EC08500C70830 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../../../../../Projects/eTesting_SSD/Code/eTesting/iOS/Resources/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBF5C6B11BA1433E004CE701 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
+		EBF5C6E91BA17445004CE701 /* ListQuestionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListQuestionVC.swift; sourceTree = "<group>"; };
+		EBF5C6F01BA1833F004CE701 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +198,7 @@
 				EBEF1D4C1B9EB3BB00C70830 /* eTesting_Swift.xcdatamodeld */,
 				EB08B3C41B9ED3E10006536F /* LoginVC.swift */,
 				EBF001AB1BA012100058F4FF /* ExamList */,
+				EBF5C6C81BA166AF004CE701 /* ListQuestion */,
 				EB5503381BA0213400A9C125 /* ExamDetail */,
 			);
 			path = "eTesting Swift";
@@ -236,6 +241,15 @@
 				EBF5C6C21BA1433E004CE701 /* Alamofire OSX Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EBF5C6C81BA166AF004CE701 /* ListQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				EBF5C6E91BA17445004CE701 /* ListQuestionVC.swift */,
+				EBF5C6F01BA1833F004CE701 /* MenuViewController.swift */,
+			);
+			name = ListQuestion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +316,7 @@
 		EBEF1D3A1B9EB3BB00C70830 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Minh Thang";
 				TargetAttributes = {
@@ -417,10 +432,12 @@
 			files = (
 				EB55033C1BA025FF00A9C125 /* ExamBriefTableViewCell.swift in Sources */,
 				EB55033A1BA0259000A9C125 /* HeaderTableViewCell.swift in Sources */,
+				EBF5C6EA1BA17445004CE701 /* ListQuestionVC.swift in Sources */,
 				EB5503351BA015A500A9C125 /* ExamListCell.swift in Sources */,
 				EBEF1D481B9EB3BB00C70830 /* ViewController.swift in Sources */,
 				EB5503331B9FD5D100A9C125 /* ExamListVC.swift in Sources */,
 				EBEF1D4E1B9EB3BB00C70830 /* eTesting_Swift.xcdatamodeld in Sources */,
+				EBF5C6F11BA1833F004CE701 /* MenuViewController.swift in Sources */,
 				EB5503371BA0212E00A9C125 /* ExamDetailTVC.swift in Sources */,
 				EB08B3C51B9ED3E10006536F /* LoginVC.swift in Sources */,
 				EBEF1D461B9EB3BB00C70830 /* AppDelegate.swift in Sources */,
