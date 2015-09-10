@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 extension String {
 
@@ -28,13 +29,14 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var inputTextPassWord: UITextField!
     @IBOutlet weak var buttonLogin: UIButton!
     override func viewDidLoad() {
-        super.viewDidLoad()
 
         setupInputBox(inputTextUserName)
         setupInputBox(inputTextPassWord)
         
         let tap = UITapGestureRecognizer(target: self, action: "handleTapToEndEditing:")
         view.addGestureRecognizer(tap)
+        super.viewDidLoad()
+
     }
 
     func handleTapToEndEditing (tap: UITapGestureRecognizer){
@@ -94,86 +96,13 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             
             self.presentViewController(controller, animated: true, completion: nil)
         }
-        let post = String(format: "username=thang&password=hoa")
-        
-        print(post)
-        
-        let url:NSURL = NSURL(string: "http://10.15.152.56:8686/rest/v1/user/thiendd3")!
-        
-        let postData:NSData = post.dataUsingEncoding(NSASCIIStringEncoding)!
-        
-        let postLength:NSString = String( postData.length)
-        
-        let request:NSMutableURLRequest = NSMutableURLRequest(URL: url)
-        request.HTTPMethod = "POST"
-        request.HTTPBody = postData
-        request.setValue(postLength as String, forHTTPHeaderField: "Content-Length")
-        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-        request.setValue("application/json", forHTTPHeaderField: "Accept")
-        
-        
-
-        var reponseError: NSError?
-        var response: NSURLResponse?
-        
-        var urlData: NSData?
-        do {
-            urlData = try NSURLConnection.sendSynchronousRequest(request, returningResponse:&response)
-        } catch let error as NSError {
-            reponseError = error
-            urlData = nil
-            let controller = UIAlertController(title: "Đăng nhập thất bại!",
-                message: "Kết nối với server bị lỗi",
-                preferredStyle: .Alert)
-            let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+        //
+        Alamofire.request(.POST, "http://10.15.152.56:8686/rest/v1/user/thiendd3/")
+           .responseJSON{ _, _, result -> Void in
             
-            controller.addAction(action)
+            print("Response String \(result.value)")
             
-            self.presentViewController(controller, animated: true, completion: nil)
         }
-        if (urlData != nil) {
-            let res = response as! NSHTTPURLResponse
-            
-            NSLog("Response code: %ld", res.statusCode);
-            if (res.statusCode >= 200 && res.statusCode < 300)
-            {
-                var error : NSError?
-                let jsonData = (try! NSJSONSerialization.JSONObjectWithData(urlData!, options: NSJSONReadingOptions.MutableContainers)) as! NSDictionary
-                let success = jsonData.valueForKey("success") as! Int
-                print(success)
-                if(success == 1)
-                {
-                    NSLog("Login SUCCESS");
-                    
-                    let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-                    prefs.setObject(inputTextUserName.text!, forKey: "USERNAME")
-                    prefs.setInteger(1, forKey: "ISLOGGEDIN")
-                    prefs.synchronize()
-                    self.dismissViewControllerAnimated(true, completion: nil)
-
-                }
-                else {
-                    var error_msg:String
-                    
-                    if jsonData["error_message"] as? String != nil {
-                        error_msg = jsonData["error_message"] as! String
-                    } else {
-                        error_msg = "Unknown Error"
-                    }
-                    
-                    let controller = UIAlertController(title: "Đăng nhập thất bại!",
-                        message: error_msg as String,
-                        preferredStyle: .Alert)
-                    let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
-                    
-                    controller.addAction(action)
-                    
-                    self.presentViewController(controller, animated: true, completion: nil)
-                }
-                
-            }
-        }
-
         
     }
 
