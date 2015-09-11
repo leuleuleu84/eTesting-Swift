@@ -14,6 +14,7 @@
 		EB5503371BA0212E00A9C125 /* ExamDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503361BA0212E00A9C125 /* ExamDetailTVC.swift */; };
 		EB55033A1BA0259000A9C125 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503391BA0259000A9C125 /* HeaderTableViewCell.swift */; };
 		EB55033C1BA025FF00A9C125 /* ExamBriefTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55033B1BA025FF00A9C125 /* ExamBriefTableViewCell.swift */; };
+		EB9A5E7B1BA2ABB400F801BA /* AnswerOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A5E7A1BA2ABB400F801BA /* AnswerOptionCell.swift */; settings = {ASSET_TAGS = (); }; };
 		EBCAC17C1BA24B1F00317FE8 /* QuestionTBV.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCAC17B1BA24B1F00317FE8 /* QuestionTBV.swift */; };
 		EBD2717A1BA0325A001BF492 /* ExamDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD271791BA0325A001BF492 /* ExamDetailTableViewCell.swift */; };
 		EBEF1D461B9EB3BB00C70830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF1D451B9EB3BB00C70830 /* AppDelegate.swift */; };
@@ -111,6 +112,7 @@
 		EB5503361BA0212E00A9C125 /* ExamDetailTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamDetailTVC.swift; sourceTree = "<group>"; };
 		EB5503391BA0259000A9C125 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		EB55033B1BA025FF00A9C125 /* ExamBriefTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamBriefTableViewCell.swift; sourceTree = "<group>"; };
+		EB9A5E7A1BA2ABB400F801BA /* AnswerOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerOptionCell.swift; sourceTree = "<group>"; };
 		EBCAC17B1BA24B1F00317FE8 /* QuestionTBV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTBV.swift; sourceTree = "<group>"; };
 		EBD271791BA0325A001BF492 /* ExamDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamDetailTableViewCell.swift; sourceTree = "<group>"; };
 		EBEF1D421B9EB3BB00C70830 /* eTesting Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eTesting Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +176,7 @@
 			children = (
 				EBCAC17B1BA24B1F00317FE8 /* QuestionTBV.swift */,
 				EB1555101BA27208001A26ED /* QuestionContentCell.swift */,
+				EB9A5E7A1BA2ABB400F801BA /* AnswerOptionCell.swift */,
 			);
 			name = Question;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				EB55033C1BA025FF00A9C125 /* ExamBriefTableViewCell.swift in Sources */,
 				EB55033A1BA0259000A9C125 /* HeaderTableViewCell.swift in Sources */,
 				EBF5C6EA1BA17445004CE701 /* ListQuestionVC.swift in Sources */,
+				EB9A5E7B1BA2ABB400F801BA /* AnswerOptionCell.swift in Sources */,
 				EB5503351BA015A500A9C125 /* ExamListCell.swift in Sources */,
 				EBEF1D481B9EB3BB00C70830 /* ViewController.swift in Sources */,
 				EB1555111BA27208001A26ED /* QuestionContentCell.swift in Sources */,
