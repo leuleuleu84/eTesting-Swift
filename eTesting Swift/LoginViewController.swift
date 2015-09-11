@@ -23,7 +23,7 @@ extension String {
     }
 }
 
-class LoginVC: UIViewController, UITextFieldDelegate {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var inputTextUserName: UITextField!
     @IBOutlet weak var inputTextPassWord: UITextField!

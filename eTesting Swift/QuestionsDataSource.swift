@@ -8,10 +8,10 @@
 
 import UIKit
 
-class QuestionTBV: UITableView, UITableViewDelegate, UITableViewDataSource {
+class QuestionsDataSource: NSObject, UITableViewDelegate, UITableViewDataSource {
 
     
-    override func numberOfRowsInSection(section: Int) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
     }
     
@@ -26,10 +26,23 @@ class QuestionTBV: UITableView, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("questionContentCell", forIndexPath: indexPath) as! QuestionContentCell
-
-        return cell
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("questionContentCell", forIndexPath: indexPath) as! QuestionContentCell
+            
+            return cell
+        }
+        
+        else {
+            let cell = tableView.dequeueReusableCellWithIdentifier("answerOptionCell", forIndexPath: indexPath) as! AnswerOptionCell
+            
+            return cell
+        }
+        
     }
+    
+//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//        return 100
+//    }
     
     /*
     // Only override drawRect: if you perform custom drawing.

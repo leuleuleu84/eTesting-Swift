@@ -10,13 +10,16 @@ import UIKit
 
 class ListQuestionVC: UIViewController, UIPopoverPresentationControllerDelegate {
     
+    @IBOutlet weak var bodyQuestion: UITableView!
     
     var menuViewController: MenuVC!
-    var listQuestion = [QuestionTBV]()
-    
+    var datasource = QuestionsDataSource()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bodyQuestion.dataSource = datasource
+        bodyQuestion.delegate = datasource
+        bodyQuestion.separatorStyle = UITableViewCellSeparatorStyle.None
         
     }
     

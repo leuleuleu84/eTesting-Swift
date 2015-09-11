@@ -7,10 +7,10 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--LoginVC-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="eTesting_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="eTesting_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -608,14 +608,14 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="answerOptionCell" id="qEA-XJ-ObH">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="answerOptionCell" id="qEA-XJ-ObH" customClass="AnswerOptionCell" customModule="eTesting_Swift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="178" width="560" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qEA-XJ-ObH" id="QKP-Qi-jwW">
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bwB-uK-me6">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_checkbox" translatesAutoresizingMaskIntoConstraints="NO" id="bwB-uK-me6">
                                                     <rect key="frame" x="8" y="6" width="32" height="32"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="32" id="IaL-Yu-HkX"/>
@@ -668,6 +668,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bodyQuestion" destination="LEZ-bU-V3t" id="Zlv-NJ-1ck"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7C-GM-DHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -684,7 +687,20 @@
                     <view key="view" contentMode="scaleToFill" id="Gpt-gk-YNF">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhìn cái gì mà nhìn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yX5-5p-6ea">
+                                <rect key="frame" x="20" y="20" width="560" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yX5-5p-6ea" firstAttribute="leading" secondItem="Gpt-gk-YNF" secondAttribute="leadingMargin" id="50a-mW-6RE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yX5-5p-6ea" secondAttribute="trailing" id="Osc-Z7-Esw"/>
+                            <constraint firstItem="yX5-5p-6ea" firstAttribute="top" secondItem="alX-AO-uD2" secondAttribute="bottom" id="eot-df-Nkm"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JCP-CQ-2af" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -884,6 +900,7 @@
     </scenes>
     <resources>
         <image name="bg_profile" width="380" height="170"/>
+        <image name="ic_checkbox" width="32" height="32"/>
         <image name="ic_from.png" width="484" height="564"/>
         <image name="ic_profile" width="89" height="89"/>
         <image name="ic_to.png" width="484" height="564"/>

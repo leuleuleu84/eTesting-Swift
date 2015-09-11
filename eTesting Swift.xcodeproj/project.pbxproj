@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB08B3C51B9ED3E10006536F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08B3C41B9ED3E10006536F /* LoginVC.swift */; };
+		EB08B3C51B9ED3E10006536F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08B3C41B9ED3E10006536F /* LoginViewController.swift */; };
 		EB1555111BA27208001A26ED /* QuestionContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1555101BA27208001A26ED /* QuestionContentCell.swift */; };
 		EB5503331B9FD5D100A9C125 /* ExamListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503321B9FD5D100A9C125 /* ExamListVC.swift */; };
 		EB5503351BA015A500A9C125 /* ExamListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503341BA015A500A9C125 /* ExamListCell.swift */; };
@@ -15,7 +15,7 @@
 		EB55033A1BA0259000A9C125 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503391BA0259000A9C125 /* HeaderTableViewCell.swift */; };
 		EB55033C1BA025FF00A9C125 /* ExamBriefTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55033B1BA025FF00A9C125 /* ExamBriefTableViewCell.swift */; };
 		EB9A5E7B1BA2ABB400F801BA /* AnswerOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A5E7A1BA2ABB400F801BA /* AnswerOptionCell.swift */; settings = {ASSET_TAGS = (); }; };
-		EBCAC17C1BA24B1F00317FE8 /* QuestionTBV.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCAC17B1BA24B1F00317FE8 /* QuestionTBV.swift */; };
+		EBCAC17C1BA24B1F00317FE8 /* QuestionsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCAC17B1BA24B1F00317FE8 /* QuestionsDataSource.swift */; };
 		EBD2717A1BA0325A001BF492 /* ExamDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD271791BA0325A001BF492 /* ExamDetailTableViewCell.swift */; };
 		EBEF1D461B9EB3BB00C70830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF1D451B9EB3BB00C70830 /* AppDelegate.swift */; };
 		EBEF1D481B9EB3BB00C70830 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF1D471B9EB3BB00C70830 /* ViewController.swift */; };
@@ -105,7 +105,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EB08B3C41B9ED3E10006536F /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		EB08B3C41B9ED3E10006536F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EB1555101BA27208001A26ED /* QuestionContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionContentCell.swift; sourceTree = "<group>"; };
 		EB5503321B9FD5D100A9C125 /* ExamListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamListVC.swift; sourceTree = "<group>"; };
 		EB5503341BA015A500A9C125 /* ExamListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamListCell.swift; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		EB5503391BA0259000A9C125 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		EB55033B1BA025FF00A9C125 /* ExamBriefTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamBriefTableViewCell.swift; sourceTree = "<group>"; };
 		EB9A5E7A1BA2ABB400F801BA /* AnswerOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerOptionCell.swift; sourceTree = "<group>"; };
-		EBCAC17B1BA24B1F00317FE8 /* QuestionTBV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTBV.swift; sourceTree = "<group>"; };
+		EBCAC17B1BA24B1F00317FE8 /* QuestionsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsDataSource.swift; sourceTree = "<group>"; };
 		EBD271791BA0325A001BF492 /* ExamDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamDetailTableViewCell.swift; sourceTree = "<group>"; };
 		EBEF1D421B9EB3BB00C70830 /* eTesting Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eTesting Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEF1D451B9EB3BB00C70830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 		EBCAC1811BA254A900317FE8 /* Question */ = {
 			isa = PBXGroup;
 			children = (
-				EBCAC17B1BA24B1F00317FE8 /* QuestionTBV.swift */,
+				EBCAC17B1BA24B1F00317FE8 /* QuestionsDataSource.swift */,
 				EB1555101BA27208001A26ED /* QuestionContentCell.swift */,
 				EB9A5E7A1BA2ABB400F801BA /* AnswerOptionCell.swift */,
 			);
@@ -212,7 +212,7 @@
 				EBEF1D4F1B9EB3BB00C70830 /* Assets.xcassets */,
 				EBEF1D541B9EB3BB00C70830 /* Info.plist */,
 				EBEF1D4C1B9EB3BB00C70830 /* eTesting_Swift.xcdatamodeld */,
-				EB08B3C41B9ED3E10006536F /* LoginVC.swift */,
+				EB08B3C41B9ED3E10006536F /* LoginViewController.swift */,
 				EBF001AB1BA012100058F4FF /* ExamList */,
 				EBF5C6C81BA166AF004CE701 /* ListQuestion */,
 				EB5503381BA0213400A9C125 /* ExamDetail */,
@@ -458,10 +458,10 @@
 				EBEF1D4E1B9EB3BB00C70830 /* eTesting_Swift.xcdatamodeld in Sources */,
 				EBF5C6F11BA1833F004CE701 /* MenuVC.swift in Sources */,
 				EB5503371BA0212E00A9C125 /* ExamDetailTVC.swift in Sources */,
-				EB08B3C51B9ED3E10006536F /* LoginVC.swift in Sources */,
+				EB08B3C51B9ED3E10006536F /* LoginViewController.swift in Sources */,
 				EBEF1D461B9EB3BB00C70830 /* AppDelegate.swift in Sources */,
 				EBD2717A1BA0325A001BF492 /* ExamDetailTableViewCell.swift in Sources */,
-				EBCAC17C1BA24B1F00317FE8 /* QuestionTBV.swift in Sources */,
+				EBCAC17C1BA24B1F00317FE8 /* QuestionsDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
