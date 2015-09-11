@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		EB08B3C51B9ED3E10006536F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08B3C41B9ED3E10006536F /* LoginVC.swift */; };
+		EB1555111BA27208001A26ED /* QuestionContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1555101BA27208001A26ED /* QuestionContentCell.swift */; };
 		EB5503331B9FD5D100A9C125 /* ExamListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503321B9FD5D100A9C125 /* ExamListVC.swift */; };
 		EB5503351BA015A500A9C125 /* ExamListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503341BA015A500A9C125 /* ExamListCell.swift */; };
 		EB5503371BA0212E00A9C125 /* ExamDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503361BA0212E00A9C125 /* ExamDetailTVC.swift */; };
 		EB55033A1BA0259000A9C125 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503391BA0259000A9C125 /* HeaderTableViewCell.swift */; };
 		EB55033C1BA025FF00A9C125 /* ExamBriefTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55033B1BA025FF00A9C125 /* ExamBriefTableViewCell.swift */; };
+		EBCAC17C1BA24B1F00317FE8 /* QuestionTBV.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCAC17B1BA24B1F00317FE8 /* QuestionTBV.swift */; };
 		EBD2717A1BA0325A001BF492 /* ExamDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD271791BA0325A001BF492 /* ExamDetailTableViewCell.swift */; };
 		EBEF1D461B9EB3BB00C70830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF1D451B9EB3BB00C70830 /* AppDelegate.swift */; };
 		EBEF1D481B9EB3BB00C70830 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF1D471B9EB3BB00C70830 /* ViewController.swift */; };
@@ -25,7 +27,7 @@
 		EBF5C6C31BA144B4004CE701 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF5C6BA1BA1433E004CE701 /* Alamofire.framework */; };
 		EBF5C6C41BA144B4004CE701 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBF5C6BA1BA1433E004CE701 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EBF5C6EA1BA17445004CE701 /* ListQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF5C6E91BA17445004CE701 /* ListQuestionVC.swift */; };
-		EBF5C6F11BA1833F004CE701 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF5C6F01BA1833F004CE701 /* MenuViewController.swift */; };
+		EBF5C6F11BA1833F004CE701 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF5C6F01BA1833F004CE701 /* MenuVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,11 +105,13 @@
 
 /* Begin PBXFileReference section */
 		EB08B3C41B9ED3E10006536F /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		EB1555101BA27208001A26ED /* QuestionContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionContentCell.swift; sourceTree = "<group>"; };
 		EB5503321B9FD5D100A9C125 /* ExamListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamListVC.swift; sourceTree = "<group>"; };
 		EB5503341BA015A500A9C125 /* ExamListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamListCell.swift; sourceTree = "<group>"; };
 		EB5503361BA0212E00A9C125 /* ExamDetailTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamDetailTVC.swift; sourceTree = "<group>"; };
 		EB5503391BA0259000A9C125 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		EB55033B1BA025FF00A9C125 /* ExamBriefTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamBriefTableViewCell.swift; sourceTree = "<group>"; };
+		EBCAC17B1BA24B1F00317FE8 /* QuestionTBV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTBV.swift; sourceTree = "<group>"; };
 		EBD271791BA0325A001BF492 /* ExamDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamDetailTableViewCell.swift; sourceTree = "<group>"; };
 		EBEF1D421B9EB3BB00C70830 /* eTesting Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eTesting Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEF1D451B9EB3BB00C70830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,7 +129,7 @@
 		EBEF1D761B9EC08500C70830 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../../../../../Projects/eTesting_SSD/Code/eTesting/iOS/Resources/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBF5C6B11BA1433E004CE701 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
 		EBF5C6E91BA17445004CE701 /* ListQuestionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListQuestionVC.swift; sourceTree = "<group>"; };
-		EBF5C6F01BA1833F004CE701 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		EBF5C6F01BA1833F004CE701 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,15 @@
 				EBD271791BA0325A001BF492 /* ExamDetailTableViewCell.swift */,
 			);
 			name = ExamDetail;
+			sourceTree = "<group>";
+		};
+		EBCAC1811BA254A900317FE8 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				EBCAC17B1BA24B1F00317FE8 /* QuestionTBV.swift */,
+				EB1555101BA27208001A26ED /* QuestionContentCell.swift */,
+			);
+			name = Question;
 			sourceTree = "<group>";
 		};
 		EBEF1D391B9EB3BB00C70830 = {
@@ -247,7 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				EBF5C6E91BA17445004CE701 /* ListQuestionVC.swift */,
-				EBF5C6F01BA1833F004CE701 /* MenuViewController.swift */,
+				EBF5C6F01BA1833F004CE701 /* MenuVC.swift */,
+				EBCAC1811BA254A900317FE8 /* Question */,
 			);
 			name = ListQuestion;
 			sourceTree = "<group>";
@@ -435,13 +449,15 @@
 				EBF5C6EA1BA17445004CE701 /* ListQuestionVC.swift in Sources */,
 				EB5503351BA015A500A9C125 /* ExamListCell.swift in Sources */,
 				EBEF1D481B9EB3BB00C70830 /* ViewController.swift in Sources */,
+				EB1555111BA27208001A26ED /* QuestionContentCell.swift in Sources */,
 				EB5503331B9FD5D100A9C125 /* ExamListVC.swift in Sources */,
 				EBEF1D4E1B9EB3BB00C70830 /* eTesting_Swift.xcdatamodeld in Sources */,
-				EBF5C6F11BA1833F004CE701 /* MenuViewController.swift in Sources */,
+				EBF5C6F11BA1833F004CE701 /* MenuVC.swift in Sources */,
 				EB5503371BA0212E00A9C125 /* ExamDetailTVC.swift in Sources */,
 				EB08B3C51B9ED3E10006536F /* LoginVC.swift in Sources */,
 				EBEF1D461B9EB3BB00C70830 /* AppDelegate.swift in Sources */,
 				EBD2717A1BA0325A001BF492 /* ExamDetailTableViewCell.swift in Sources */,
+				EBCAC17C1BA24B1F00317FE8 /* QuestionTBV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,6 +625,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "eTesting SwiftTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "test.eTesting-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -621,6 +638,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "eTesting SwiftTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "test.eTesting-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

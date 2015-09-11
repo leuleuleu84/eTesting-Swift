@@ -10,17 +10,17 @@ import UIKit
 
 class ListQuestionVC: UIViewController, UIPopoverPresentationControllerDelegate {
     
-    var menuViewController: MenuViewController!
+    
+    var menuViewController: MenuVC!
+    var listQuestion = [QuestionTBV]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
-    func handleTap(sender: UITapGestureRecognizer){
-
-    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -31,11 +31,14 @@ class ListQuestionVC: UIViewController, UIPopoverPresentationControllerDelegate 
         self.performSegueWithIdentifier("popoverView", sender: self)
     }
     
+    @IBAction func finishAction(sender: UIBarButtonItem) {
+        performSegueWithIdentifier("gotoResult", sender: self)
+    }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "popoverView"{
             
         
-        let collectionViewController = segue.destinationViewController as! MenuViewController
+        let collectionViewController = segue.destinationViewController as! MenuVC
             collectionViewController.preferredContentSize = CGSizeMake(300,200)
 
         let popoverController = collectionViewController.popoverPresentationController
