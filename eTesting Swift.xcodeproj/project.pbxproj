@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB08B3C51B9ED3E10006536F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08B3C41B9ED3E10006536F /* LoginVC.swift */; };
-		EB5503331B9FD5D100A9C125 /* ExamListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503321B9FD5D100A9C125 /* ExamListVC.swift */; };
-		EB5503351BA015A500A9C125 /* ExamListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503341BA015A500A9C125 /* ExamListCell.swift */; settings = {ASSET_TAGS = (); }; };
-		EB5503371BA0212E00A9C125 /* ExamDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503361BA0212E00A9C125 /* ExamDetailTVC.swift */; settings = {ASSET_TAGS = (); }; };
-		EB55033A1BA0259000A9C125 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503391BA0259000A9C125 /* HeaderTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		EB55033C1BA025FF00A9C125 /* ExamBriefTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55033B1BA025FF00A9C125 /* ExamBriefTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		EBD2717A1BA0325A001BF492 /* ExamDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD271791BA0325A001BF492 /* ExamDetailTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		EB08B3C51B9ED3E10006536F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08B3C41B9ED3E10006536F /* LoginViewController.swift */; };
+		EB1141E91BA3DB70001C2BF5 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1141E81BA3DB70001C2BF5 /* HeaderCollectionReusableView.swift */; settings = {ASSET_TAGS = (); }; };
+		EB1555111BA27208001A26ED /* QuestionContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1555101BA27208001A26ED /* QuestionContentCell.swift */; };
+		EB5503331B9FD5D100A9C125 /* ExamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503321B9FD5D100A9C125 /* ExamListViewController.swift */; };
+		EB5503351BA015A500A9C125 /* ExamListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503341BA015A500A9C125 /* ExamListCell.swift */; };
+		EB5503371BA0212E00A9C125 /* ExamDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503361BA0212E00A9C125 /* ExamDetailTVC.swift */; };
+		EB55033A1BA0259000A9C125 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503391BA0259000A9C125 /* HeaderTableViewCell.swift */; };
+		EB55033C1BA025FF00A9C125 /* ExamBriefTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55033B1BA025FF00A9C125 /* ExamBriefTableViewCell.swift */; };
+		EB583D301BAA2D6B00D00FFB /* ExamBrief.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB583D2F1BAA2D6B00D00FFB /* ExamBrief.swift */; settings = {ASSET_TAGS = (); }; };
+		EB64BA151BAA6C6A0045C288 /* QuestionBrief.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64BA141BAA6C6A0045C288 /* QuestionBrief.swift */; settings = {ASSET_TAGS = (); }; };
+		EB64BA1B1BAA6D180045C288 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64BA1A1BAA6D180045C288 /* Answer.swift */; settings = {ASSET_TAGS = (); }; };
+		EB64BA1D1BAA6E800045C288 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64BA1C1BAA6E800045C288 /* Media.swift */; settings = {ASSET_TAGS = (); }; };
+		EB64BA1F1BAA90FD0045C288 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64BA1E1BAA90FD0045C288 /* Question.swift */; settings = {ASSET_TAGS = (); }; };
+		EB9A5E7B1BA2ABB400F801BA /* AnswerOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A5E7A1BA2ABB400F801BA /* AnswerOptionCell.swift */; settings = {ASSET_TAGS = (); }; };
+		EBC65BF31BA66C6400CB861B /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC65BF21BA66C6400CB861B /* UserProfile.swift */; settings = {ASSET_TAGS = (); }; };
+		EBCAC17C1BA24B1F00317FE8 /* QuestionsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCAC17B1BA24B1F00317FE8 /* QuestionsDataSource.swift */; };
+		EBD1CB701BA9610000B749E6 /* eTestingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD1CB6F1BA9610000B749E6 /* eTestingClient.swift */; settings = {ASSET_TAGS = (); }; };
+		EBD1CB761BA97C6A00B749E6 /* ExamDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD1CB751BA97C6A00B749E6 /* ExamDetails.swift */; settings = {ASSET_TAGS = (); }; };
+		EBD2717A1BA0325A001BF492 /* ExamDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD271791BA0325A001BF492 /* ExamDetailTableViewCell.swift */; };
 		EBEF1D461B9EB3BB00C70830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF1D451B9EB3BB00C70830 /* AppDelegate.swift */; };
 		EBEF1D481B9EB3BB00C70830 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF1D471B9EB3BB00C70830 /* ViewController.swift */; };
 		EBEF1D4B1B9EB3BB00C70830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBEF1D491B9EB3BB00C70830 /* Main.storyboard */; };
@@ -22,6 +34,10 @@
 		EBEF1D5E1B9EB3BB00C70830 /* eTesting_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF1D5D1B9EB3BB00C70830 /* eTesting_SwiftTests.swift */; };
 		EBEF1D691B9EB3BB00C70830 /* eTesting_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEF1D681B9EB3BB00C70830 /* eTesting_SwiftUITests.swift */; };
 		EBEF1D771B9EC08500C70830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBEF1D761B9EC08500C70830 /* LaunchScreen.storyboard */; };
+		EBF5C6C31BA144B4004CE701 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF5C6BA1BA1433E004CE701 /* Alamofire.framework */; };
+		EBF5C6C41BA144B4004CE701 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBF5C6BA1BA1433E004CE701 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBF5C6EA1BA17445004CE701 /* ListQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF5C6E91BA17445004CE701 /* ListQuestionViewController.swift */; };
+		EBF5C6F11BA1833F004CE701 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF5C6F01BA1833F004CE701 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,15 +55,83 @@
 			remoteGlobalIDString = EBEF1D411B9EB3BB00C70830;
 			remoteInfo = "eTesting Swift";
 		};
+		EBF5C6B91BA1433E004CE701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF5C6B11BA1433E004CE701 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		EBF5C6BB1BA1433E004CE701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF5C6B11BA1433E004CE701 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		EBF5C6BD1BA1433E004CE701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF5C6B11BA1433E004CE701 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		EBF5C6BF1BA1433E004CE701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF5C6B11BA1433E004CE701 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		EBF5C6C11BA1433E004CE701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF5C6B11BA1433E004CE701 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		EBF5C6C51BA144B4004CE701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF5C6B11BA1433E004CE701 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EBF5C6C71BA144B4004CE701 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EBF5C6C41BA144B4004CE701 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		EB08B3C41B9ED3E10006536F /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		EB5503321B9FD5D100A9C125 /* ExamListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamListVC.swift; sourceTree = "<group>"; };
+		EB08B3C41B9ED3E10006536F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EB1141E81BA3DB70001C2BF5 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		EB1555101BA27208001A26ED /* QuestionContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionContentCell.swift; sourceTree = "<group>"; };
+		EB5503321B9FD5D100A9C125 /* ExamListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamListViewController.swift; sourceTree = "<group>"; };
 		EB5503341BA015A500A9C125 /* ExamListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamListCell.swift; sourceTree = "<group>"; };
 		EB5503361BA0212E00A9C125 /* ExamDetailTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamDetailTVC.swift; sourceTree = "<group>"; };
 		EB5503391BA0259000A9C125 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		EB55033B1BA025FF00A9C125 /* ExamBriefTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamBriefTableViewCell.swift; sourceTree = "<group>"; };
+		EB583D2F1BAA2D6B00D00FFB /* ExamBrief.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamBrief.swift; sourceTree = "<group>"; };
+		EB64BA141BAA6C6A0045C288 /* QuestionBrief.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionBrief.swift; sourceTree = "<group>"; };
+		EB64BA1A1BAA6D180045C288 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		EB64BA1C1BAA6E800045C288 /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		EB64BA1E1BAA90FD0045C288 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		EB9A5E7A1BA2ABB400F801BA /* AnswerOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerOptionCell.swift; sourceTree = "<group>"; };
+		EBC65BF21BA66C6400CB861B /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		EBCAC17B1BA24B1F00317FE8 /* QuestionsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsDataSource.swift; sourceTree = "<group>"; };
+		EBD1CB6F1BA9610000B749E6 /* eTestingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eTestingClient.swift; sourceTree = "<group>"; };
+		EBD1CB751BA97C6A00B749E6 /* ExamDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamDetails.swift; sourceTree = "<group>"; };
 		EBD271791BA0325A001BF492 /* ExamDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamDetailTableViewCell.swift; sourceTree = "<group>"; };
 		EBEF1D421B9EB3BB00C70830 /* eTesting Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eTesting Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEF1D451B9EB3BB00C70830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +147,9 @@
 		EBEF1D681B9EB3BB00C70830 /* eTesting_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eTesting_SwiftUITests.swift; sourceTree = "<group>"; };
 		EBEF1D6A1B9EB3BB00C70830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBEF1D761B9EC08500C70830 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../../../../../Projects/eTesting_SSD/Code/eTesting/iOS/Resources/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBF5C6B11BA1433E004CE701 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
+		EBF5C6E91BA17445004CE701 /* ListQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListQuestionViewController.swift; sourceTree = "<group>"; };
+		EBF5C6F01BA1833F004CE701 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF5C6C31BA144B4004CE701 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +189,38 @@
 			name = ExamDetail;
 			sourceTree = "<group>";
 		};
+		EBC65BF01BA65E2500CB861B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBC65BF21BA66C6400CB861B /* UserProfile.swift */,
+				EBD1CB751BA97C6A00B749E6 /* ExamDetails.swift */,
+				EB583D2F1BAA2D6B00D00FFB /* ExamBrief.swift */,
+				EB64BA141BAA6C6A0045C288 /* QuestionBrief.swift */,
+				EB64BA1A1BAA6D180045C288 /* Answer.swift */,
+				EB64BA1C1BAA6E800045C288 /* Media.swift */,
+				EB64BA1E1BAA90FD0045C288 /* Question.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EBC65BF11BA65E4D00CB861B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EBD1CB6F1BA9610000B749E6 /* eTestingClient.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		EBCAC1811BA254A900317FE8 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				EBCAC17B1BA24B1F00317FE8 /* QuestionsDataSource.swift */,
+				EB1555101BA27208001A26ED /* QuestionContentCell.swift */,
+				EB9A5E7A1BA2ABB400F801BA /* AnswerOptionCell.swift */,
+			);
+			name = Question;
+			sourceTree = "<group>";
+		};
 		EBEF1D391B9EB3BB00C70830 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +228,7 @@
 				EBEF1D5C1B9EB3BB00C70830 /* eTesting SwiftTests */,
 				EBEF1D671B9EB3BB00C70830 /* eTesting SwiftUITests */,
 				EBEF1D431B9EB3BB00C70830 /* Products */,
+				EBF5C6B11BA1433E004CE701 /* Alamofire.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +245,8 @@
 		EBEF1D441B9EB3BB00C70830 /* eTesting Swift */ = {
 			isa = PBXGroup;
 			children = (
+				EBC65BF11BA65E4D00CB861B /* Services */,
+				EBC65BF01BA65E2500CB861B /* Model */,
 				EBEF1D761B9EC08500C70830 /* LaunchScreen.storyboard */,
 				EBEF1D451B9EB3BB00C70830 /* AppDelegate.swift */,
 				EBEF1D471B9EB3BB00C70830 /* ViewController.swift */,
@@ -131,8 +254,9 @@
 				EBEF1D4F1B9EB3BB00C70830 /* Assets.xcassets */,
 				EBEF1D541B9EB3BB00C70830 /* Info.plist */,
 				EBEF1D4C1B9EB3BB00C70830 /* eTesting_Swift.xcdatamodeld */,
-				EB08B3C41B9ED3E10006536F /* LoginVC.swift */,
+				EB08B3C41B9ED3E10006536F /* LoginViewController.swift */,
 				EBF001AB1BA012100058F4FF /* ExamList */,
+				EBF5C6C81BA166AF004CE701 /* ListQuestion */,
 				EB5503381BA0213400A9C125 /* ExamDetail */,
 			);
 			path = "eTesting Swift";
@@ -159,10 +283,33 @@
 		EBF001AB1BA012100058F4FF /* ExamList */ = {
 			isa = PBXGroup;
 			children = (
-				EB5503321B9FD5D100A9C125 /* ExamListVC.swift */,
+				EB5503321B9FD5D100A9C125 /* ExamListViewController.swift */,
 				EB5503341BA015A500A9C125 /* ExamListCell.swift */,
 			);
 			name = ExamList;
+			sourceTree = "<group>";
+		};
+		EBF5C6B21BA1433E004CE701 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBF5C6BA1BA1433E004CE701 /* Alamofire.framework */,
+				EBF5C6BC1BA1433E004CE701 /* Alamofire.framework */,
+				EBF5C6BE1BA1433E004CE701 /* Alamofire.framework */,
+				EBF5C6C01BA1433E004CE701 /* Alamofire iOS Tests.xctest */,
+				EBF5C6C21BA1433E004CE701 /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBF5C6C81BA166AF004CE701 /* ListQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				EBF5C6E91BA17445004CE701 /* ListQuestionViewController.swift */,
+				EB1141E81BA3DB70001C2BF5 /* HeaderCollectionReusableView.swift */,
+				EBF5C6F01BA1833F004CE701 /* MenuViewController.swift */,
+				EBCAC1811BA254A900317FE8 /* Question */,
+			);
+			name = ListQuestion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,10 +322,12 @@
 				EBEF1D3E1B9EB3BB00C70830 /* Sources */,
 				EBEF1D3F1B9EB3BB00C70830 /* Frameworks */,
 				EBEF1D401B9EB3BB00C70830 /* Resources */,
+				EBF5C6C71BA144B4004CE701 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EBF5C6C61BA144B4004CE701 /* PBXTargetDependency */,
 			);
 			name = "eTesting Swift";
 			productName = "eTesting Swift";
@@ -227,6 +376,7 @@
 		EBEF1D3A1B9EB3BB00C70830 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Minh Thang";
 				TargetAttributes = {
@@ -255,6 +405,12 @@
 			mainGroup = EBEF1D391B9EB3BB00C70830;
 			productRefGroup = EBEF1D431B9EB3BB00C70830 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EBF5C6B21BA1433E004CE701 /* Products */;
+					ProjectRef = EBF5C6B11BA1433E004CE701 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EBEF1D411B9EB3BB00C70830 /* eTesting Swift */,
@@ -263,6 +419,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EBF5C6BA1BA1433E004CE701 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = EBF5C6B91BA1433E004CE701 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EBF5C6BC1BA1433E004CE701 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = EBF5C6BB1BA1433E004CE701 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EBF5C6BE1BA1433E004CE701 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = EBF5C6BD1BA1433E004CE701 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EBF5C6C01BA1433E004CE701 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = EBF5C6BF1BA1433E004CE701 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EBF5C6C21BA1433E004CE701 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = EBF5C6C11BA1433E004CE701 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EBEF1D401B9EB3BB00C70830 /* Resources */ = {
@@ -296,16 +490,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB1141E91BA3DB70001C2BF5 /* HeaderCollectionReusableView.swift in Sources */,
+				EB583D301BAA2D6B00D00FFB /* ExamBrief.swift in Sources */,
+				EBD1CB701BA9610000B749E6 /* eTestingClient.swift in Sources */,
 				EB55033C1BA025FF00A9C125 /* ExamBriefTableViewCell.swift in Sources */,
 				EB55033A1BA0259000A9C125 /* HeaderTableViewCell.swift in Sources */,
+				EB64BA1B1BAA6D180045C288 /* Answer.swift in Sources */,
+				EB64BA1D1BAA6E800045C288 /* Media.swift in Sources */,
+				EBF5C6EA1BA17445004CE701 /* ListQuestionViewController.swift in Sources */,
+				EB64BA151BAA6C6A0045C288 /* QuestionBrief.swift in Sources */,
+				EB64BA1F1BAA90FD0045C288 /* Question.swift in Sources */,
+				EB9A5E7B1BA2ABB400F801BA /* AnswerOptionCell.swift in Sources */,
 				EB5503351BA015A500A9C125 /* ExamListCell.swift in Sources */,
 				EBEF1D481B9EB3BB00C70830 /* ViewController.swift in Sources */,
-				EB5503331B9FD5D100A9C125 /* ExamListVC.swift in Sources */,
+				EB1555111BA27208001A26ED /* QuestionContentCell.swift in Sources */,
+				EBD1CB761BA97C6A00B749E6 /* ExamDetails.swift in Sources */,
+				EB5503331B9FD5D100A9C125 /* ExamListViewController.swift in Sources */,
 				EBEF1D4E1B9EB3BB00C70830 /* eTesting_Swift.xcdatamodeld in Sources */,
+				EBF5C6F11BA1833F004CE701 /* MenuViewController.swift in Sources */,
 				EB5503371BA0212E00A9C125 /* ExamDetailTVC.swift in Sources */,
-				EB08B3C51B9ED3E10006536F /* LoginVC.swift in Sources */,
+				EB08B3C51B9ED3E10006536F /* LoginViewController.swift in Sources */,
 				EBEF1D461B9EB3BB00C70830 /* AppDelegate.swift in Sources */,
 				EBD2717A1BA0325A001BF492 /* ExamDetailTableViewCell.swift in Sources */,
+				EBCAC17C1BA24B1F00317FE8 /* QuestionsDataSource.swift in Sources */,
+				EBC65BF31BA66C6400CB861B /* UserProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +545,11 @@
 			isa = PBXTargetDependency;
 			target = EBEF1D411B9EB3BB00C70830 /* eTesting Swift */;
 			targetProxy = EBEF1D651B9EB3BB00C70830 /* PBXContainerItemProxy */;
+		};
+		EBF5C6C61BA144B4004CE701 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = EBF5C6C51BA144B4004CE701 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -440,6 +653,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "eTesting Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -453,6 +667,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "eTesting Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -466,6 +681,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "eTesting SwiftTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "test.eTesting-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -478,6 +694,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "eTesting SwiftTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "test.eTesting-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

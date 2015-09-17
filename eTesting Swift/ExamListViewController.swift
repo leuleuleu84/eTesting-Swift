@@ -8,20 +8,20 @@
 
 import UIKit
 
-class ExamListVC: UITableViewController {
+class ExamListViewController: UITableViewController {
 
 //    @IBOutlet weak var usernameLabel: UILabel!
     
     override func viewWillAppear(animated: Bool) {
         super.viewDidAppear(true)
 
-        let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        let isLoggedIn:Int = prefs.integerForKey("ISLOGGEDIN") as Int
-        if (isLoggedIn != 0) {
-            self.performSegueWithIdentifier("goto_login", sender: self)
-        } else {
-//            self.usernameLabel.text = prefs.valueForKey("USERNAME") as? String
-        }
+//        let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+//        let isLoggedIn:Int = prefs.integerForKey("ISLOGGEDIN") as Int
+//        if (isLoggedIn != 0) {
+//            self.performSegueWithIdentifier("goto_login", sender: self)
+//        } else {
+////            self.usernameLabel.text = prefs.valueForKey("USERNAME") as? String
+//        }
     }
     
    
