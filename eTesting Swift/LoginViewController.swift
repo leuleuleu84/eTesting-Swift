@@ -29,6 +29,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var inputTextPassWord: UITextField!
     @IBOutlet weak var buttonLogin: UIButton!
     
+    
     override func viewDidLoad() {
 
         setupInputBox(inputTextUserName)
@@ -90,7 +91,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         let username = inputTextUserName.text
         let password = inputTextPassWord.text
-        
+
         if (username!.isNullOrHaveWhiteSpace || password!.isNullOrHaveWhiteSpace) {
             let controller = UIAlertController(title: "Lỗi",
                 message: "Vui vòng đăng nhập lại thông tin",
@@ -101,25 +102,24 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             
             self.presentViewController(controller, animated: true, completion: nil)
         }
-//        let credentialData = "\(username):\(password)".dataUsingEncoding(NSUTF8StringEncoding)!
-//        let base64Credentials = credentialData.base64EncodedStringWithOptions( NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
+        
+        let user = eTestingClient.getUserProfile(username!, password: password!)
+        
+
+       //
+
+//
 //        
-//        let headers = ["Authorization": "Basic \(base64Credentials)"]
-//        
-//        Alamofire.request(.GET, "http://localhost:22333/rest/v1/User/Login", headers: headers)
-//            .responseJSON { _, _, result in
-//                print(result)
+//        Alamofire.request(.POST, "http://10.15.152.56:8686/rest/v1/user/thiendd3/")
+//           .responseJSON{ _, _, resultRequest -> Void in
+//
+//            print(resultRequest.value)
+//            if let anyObjec = resultRequest.value {
+//                user.emailAddress = (anyObjec["email"] as AnyObject? as? String) ?? ""
+//                
+//            }
 //        }
-        
-        
-        
-        Alamofire.request(.POST, "http://10.15.152.56:8686/rest/v1/user/thiendd3/")
-           .responseJSON{ _, _, result -> Void in
-            
-            print("Response String \(result.value)")
-            
-        }
-        
+//        
         
     }
 

@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ListQuestionVC: UIViewController, UIPopoverPresentationControllerDelegate {
+class ListQuestionViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     @IBOutlet weak var bodyQuestion: UITableView!
     
-    var menuViewController: MenuVC!
+    var menuViewController: MenuViewController!
     var datasource = QuestionsDataSource()
     
     override func viewDidLoad() {
@@ -41,7 +41,7 @@ class ListQuestionVC: UIViewController, UIPopoverPresentationControllerDelegate 
         if segue.identifier == "popoverView"{
             
         
-        let collectionViewController = segue.destinationViewController as! MenuVC
+        let collectionViewController = segue.destinationViewController as! MenuViewController
             collectionViewController.preferredContentSize = CGSizeMake(300,200)
 
         let popoverController = collectionViewController.popoverPresentationController
