@@ -10,12 +10,12 @@ import UIKit
 import Alamofire
 
 extension String {
-
+    
     var isNullOrHaveWhiteSpace : Bool {
         if (self.isEmpty){
             return true
         }
-
+            
         else if (self.rangeOfCharacterFromSet(NSCharacterSet(charactersInString: " ")) != nil) {
             return true
         }
@@ -23,34 +23,41 @@ extension String {
     }
 }
 
-class LoginViewController: UIViewController, UITextFieldDelegate {
+class LoginViewController: UIViewController, UITextFieldDelegate, UISplitViewControllerDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var inputTextUserName: UITextField!
     @IBOutlet weak var inputTextPassWord: UITextField!
     @IBOutlet weak var buttonLogin: UIButton!
     
+    var displayVC : DisplayViewController! {
+        didSet {
+            displayVC.user = user
+        }
+    }
     
+    var user : UserProfile!     
     override func viewDidLoad() {
-
+        
         setupInputBox(inputTextUserName)
         setupInputBox(inputTextPassWord)
+        
         
         
         let tap = UITapGestureRecognizer(target: self, action: "handleTapToEndEditing:")
         view.addGestureRecognizer(tap)
         super.viewDidLoad()
-
+        
     }
-
+    
     func handleTapToEndEditing (tap: UITapGestureRecognizer){
         view.endEditing(true)
         scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-
+        
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if (textField == inputTextUserName) {
-//            inputTextUserName.resignFirstResponder()
+            //            inputTextUserName.resignFirstResponder()
             inputTextPassWord.isFirstResponder()
         }
         else if (textField == inputTextPassWord){
@@ -71,6 +78,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
     func setupInputBox(tf: UITextField){
         tf.delegate = self
         tf.layer.borderColor = UIColor.whiteColor().CGColor
@@ -86,12 +95,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         tf.font = UIFont.systemFontOfSize(17);
     }
     
+    func DidLogin (returnedUser: UserProfile) {
+        self.user = returnedUser
+        self.performSegueWithIdentifier("doLogin", sender: self)
+    }
     
     @IBAction func doLogin(sender: UIButton) {
         
         let username = inputTextUserName.text
         let password = inputTextPassWord.text
-
+        
         if (username!.isNullOrHaveWhiteSpace || password!.isNullOrHaveWhiteSpace) {
             let controller = UIAlertController(title: "Lỗi",
                 message: "Vui vòng đăng nhập lại thông tin",
@@ -103,35 +116,22 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             self.presentViewController(controller, animated: true, completion: nil)
         }
         
-        let user = eTestingClient.getUserProfile(username!, password: password!)
+        eTestingClient.getUserProfile(username!, password: password!, callback: DidLogin)
         
-
-       //
-
-//
-//        
-//        Alamofire.request(.POST, "http://10.15.152.56:8686/rest/v1/user/thiendd3/")
-//           .responseJSON{ _, _, resultRequest -> Void in
-//
-//            print(resultRequest.value)
-//            if let anyObjec = resultRequest.value {
-//                user.emailAddress = (anyObjec["email"] as AnyObject? as? String) ?? ""
-//                
-//            }
-//        }
-//        
         
+        // In a storyboard-based application, you will often want to do a little preparation before navigation
+       
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        
+        if segue.identifier == "doLogin" {
+            
+            displayVC = segue.destinationViewController as! DisplayViewController
 
+        }
+        //         Get the new view controller using segue.destinationViewController.
+        //         Pass the selected object to the new view controller.
+    }
+
+    
 }

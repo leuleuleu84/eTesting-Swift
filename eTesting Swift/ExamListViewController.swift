@@ -8,45 +8,33 @@
 
 import UIKit
 
-class ExamListViewController: UITableViewController {
+class ExamListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
 //    @IBOutlet weak var usernameLabel: UILabel!
     
+    @IBOutlet weak var listExams: UITableView!
     override func viewWillAppear(animated: Bool) {
         super.viewDidAppear(true)
+        listExams.dataSource = self
+        listExams.delegate = self
+        self.edgesForExtendedLayout = UIRectEdge.None
 
-//        let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-//        let isLoggedIn:Int = prefs.integerForKey("ISLOGGEDIN") as Int
-//        if (isLoggedIn != 0) {
-//            self.performSegueWithIdentifier("goto_login", sender: self)
-//        } else {
-////            self.usernameLabel.text = prefs.valueForKey("USERNAME") as? String
-//        }
     }
     
-   
-    
-//    @IBAction func logOut(sender: UIButton) {
-//        let appDomain = NSBundle.mainBundle().bundleIdentifier
-//        NSUserDefaults.standardUserDefaults().removePersistentDomainForName(appDomain!)
-//        
-//        self.performSegueWithIdentifier("goto_login", sender: self)
-//    }
-    
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("examListCell", forIndexPath: indexPath) as! ExamListCell
         return cell
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 88
     }
 

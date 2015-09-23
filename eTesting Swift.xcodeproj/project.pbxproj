@@ -10,6 +10,7 @@
 		EB08B3C51B9ED3E10006536F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08B3C41B9ED3E10006536F /* LoginViewController.swift */; };
 		EB1141E91BA3DB70001C2BF5 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1141E81BA3DB70001C2BF5 /* HeaderCollectionReusableView.swift */; settings = {ASSET_TAGS = (); }; };
 		EB1555111BA27208001A26ED /* QuestionContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1555101BA27208001A26ED /* QuestionContentCell.swift */; };
+		EB214D611BABECA300096555 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB214D601BABECA300096555 /* SideBarTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		EB5503331B9FD5D100A9C125 /* ExamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503321B9FD5D100A9C125 /* ExamListViewController.swift */; };
 		EB5503351BA015A500A9C125 /* ExamListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503341BA015A500A9C125 /* ExamListCell.swift */; };
 		EB5503371BA0212E00A9C125 /* ExamDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503361BA0212E00A9C125 /* ExamDetailTVC.swift */; };
@@ -21,6 +22,7 @@
 		EB64BA1D1BAA6E800045C288 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64BA1C1BAA6E800045C288 /* Media.swift */; settings = {ASSET_TAGS = (); }; };
 		EB64BA1F1BAA90FD0045C288 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64BA1E1BAA90FD0045C288 /* Question.swift */; settings = {ASSET_TAGS = (); }; };
 		EB9A5E7B1BA2ABB400F801BA /* AnswerOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A5E7A1BA2ABB400F801BA /* AnswerOptionCell.swift */; settings = {ASSET_TAGS = (); }; };
+		EB9AE2421BB0F46900573A08 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9AE2411BB0F46900573A08 /* DisplayViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		EBC65BF31BA66C6400CB861B /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC65BF21BA66C6400CB861B /* UserProfile.swift */; settings = {ASSET_TAGS = (); }; };
 		EBCAC17C1BA24B1F00317FE8 /* QuestionsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCAC17B1BA24B1F00317FE8 /* QuestionsDataSource.swift */; };
 		EBD1CB701BA9610000B749E6 /* eTestingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD1CB6F1BA9610000B749E6 /* eTestingClient.swift */; settings = {ASSET_TAGS = (); }; };
@@ -117,6 +119,7 @@
 		EB08B3C41B9ED3E10006536F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EB1141E81BA3DB70001C2BF5 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		EB1555101BA27208001A26ED /* QuestionContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionContentCell.swift; sourceTree = "<group>"; };
+		EB214D601BABECA300096555 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
 		EB5503321B9FD5D100A9C125 /* ExamListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamListViewController.swift; sourceTree = "<group>"; };
 		EB5503341BA015A500A9C125 /* ExamListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamListCell.swift; sourceTree = "<group>"; };
 		EB5503361BA0212E00A9C125 /* ExamDetailTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamDetailTVC.swift; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 		EB64BA1C1BAA6E800045C288 /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		EB64BA1E1BAA90FD0045C288 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		EB9A5E7A1BA2ABB400F801BA /* AnswerOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerOptionCell.swift; sourceTree = "<group>"; };
+		EB9AE2411BB0F46900573A08 /* DisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
 		EBC65BF21BA66C6400CB861B /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		EBCAC17B1BA24B1F00317FE8 /* QuestionsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsDataSource.swift; sourceTree = "<group>"; };
 		EBD1CB6F1BA9610000B749E6 /* eTestingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eTestingClient.swift; sourceTree = "<group>"; };
@@ -285,6 +289,8 @@
 			children = (
 				EB5503321B9FD5D100A9C125 /* ExamListViewController.swift */,
 				EB5503341BA015A500A9C125 /* ExamListCell.swift */,
+				EB214D601BABECA300096555 /* SideBarTableViewController.swift */,
+				EB9AE2411BB0F46900573A08 /* DisplayViewController.swift */,
 			);
 			name = ExamList;
 			sourceTree = "<group>";
@@ -507,8 +513,10 @@
 				EBD1CB761BA97C6A00B749E6 /* ExamDetails.swift in Sources */,
 				EB5503331B9FD5D100A9C125 /* ExamListViewController.swift in Sources */,
 				EBEF1D4E1B9EB3BB00C70830 /* eTesting_Swift.xcdatamodeld in Sources */,
+				EB9AE2421BB0F46900573A08 /* DisplayViewController.swift in Sources */,
 				EBF5C6F11BA1833F004CE701 /* MenuViewController.swift in Sources */,
 				EB5503371BA0212E00A9C125 /* ExamDetailTVC.swift in Sources */,
+				EB214D611BABECA300096555 /* SideBarTableViewController.swift in Sources */,
 				EB08B3C51B9ED3E10006536F /* LoginViewController.swift in Sources */,
 				EBEF1D461B9EB3BB00C70830 /* AppDelegate.swift in Sources */,
 				EBD2717A1BA0325A001BF492 /* ExamDetailTableViewCell.swift in Sources */,
