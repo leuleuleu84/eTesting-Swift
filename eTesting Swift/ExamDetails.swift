@@ -25,16 +25,10 @@ class ExamDetails: ExamBrief {
 
 }
 
-enum RegistrationStatus {
-    case Unregistered
-    case Pending
-    case Approved
+enum RegistrationStatus: Int {
+    case Unregistered = 0, Pending, Approved
 }
 
-enum UserTestStatus {
-    case NotAttempt
-    case InTest
-    case Locked
-    case Attempted
-    case Waiting
+enum UserTestStatus : Int {
+    case NotAttempt = 0, InTest, Locked, Attempted, Waiting
 }

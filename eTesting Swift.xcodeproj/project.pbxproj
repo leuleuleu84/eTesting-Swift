@@ -10,7 +10,10 @@
 		EB08B3C51B9ED3E10006536F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08B3C41B9ED3E10006536F /* LoginViewController.swift */; };
 		EB1141E91BA3DB70001C2BF5 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1141E81BA3DB70001C2BF5 /* HeaderCollectionReusableView.swift */; settings = {ASSET_TAGS = (); }; };
 		EB1555111BA27208001A26ED /* QuestionContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1555101BA27208001A26ED /* QuestionContentCell.swift */; };
+		EB1D2B131BB3EB6B001A1EC2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D2B121BB3EB6B001A1EC2 /* StringExtension.swift */; settings = {ASSET_TAGS = (); }; };
+		EB1D2B151BB3EDE9001A1EC2 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D2B141BB3EDE9001A1EC2 /* NSDateExtension.swift */; settings = {ASSET_TAGS = (); }; };
 		EB214D611BABECA300096555 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB214D601BABECA300096555 /* SideBarTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EB5377A91BB51D90001DAF8D /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5377A81BB51D90001DAF8D /* Converter.swift */; settings = {ASSET_TAGS = (); }; };
 		EB5503331B9FD5D100A9C125 /* ExamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503321B9FD5D100A9C125 /* ExamListViewController.swift */; };
 		EB5503351BA015A500A9C125 /* ExamListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503341BA015A500A9C125 /* ExamListCell.swift */; };
 		EB5503371BA0212E00A9C125 /* ExamDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503361BA0212E00A9C125 /* ExamDetailTVC.swift */; };
@@ -119,7 +122,10 @@
 		EB08B3C41B9ED3E10006536F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EB1141E81BA3DB70001C2BF5 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		EB1555101BA27208001A26ED /* QuestionContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionContentCell.swift; sourceTree = "<group>"; };
+		EB1D2B121BB3EB6B001A1EC2 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		EB1D2B141BB3EDE9001A1EC2 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		EB214D601BABECA300096555 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
+		EB5377A81BB51D90001DAF8D /* Converter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		EB5503321B9FD5D100A9C125 /* ExamListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamListViewController.swift; sourceTree = "<group>"; };
 		EB5503341BA015A500A9C125 /* ExamListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamListCell.swift; sourceTree = "<group>"; };
 		EB5503361BA0212E00A9C125 /* ExamDetailTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamDetailTVC.swift; sourceTree = "<group>"; };
@@ -182,6 +188,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB1D2B0B1BB3E4EE001A1EC2 /* MapDtoToModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MapDtoToModel;
+			sourceTree = "<group>";
+		};
+		EB1D2B101BB3E6D8001A1EC2 /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				EB5377A81BB51D90001DAF8D /* Converter.swift */,
+			);
+			name = Converter;
+			sourceTree = "<group>";
+		};
+		EB1D2B111BB3EAA8001A1EC2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EB1D2B121BB3EB6B001A1EC2 /* StringExtension.swift */,
+				EB1D2B141BB3EDE9001A1EC2 /* NSDateExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		EB5503381BA0213400A9C125 /* ExamDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +279,9 @@
 		EBEF1D441B9EB3BB00C70830 /* eTesting Swift */ = {
 			isa = PBXGroup;
 			children = (
+				EB1D2B111BB3EAA8001A1EC2 /* Extension */,
+				EB1D2B101BB3E6D8001A1EC2 /* Converter */,
+				EB1D2B0B1BB3E4EE001A1EC2 /* MapDtoToModel */,
 				EBC65BF11BA65E4D00CB861B /* Services */,
 				EBC65BF01BA65E2500CB861B /* Model */,
 				EBEF1D761B9EC08500C70830 /* LaunchScreen.storyboard */,
@@ -501,8 +534,10 @@
 				EBD1CB701BA9610000B749E6 /* eTestingClient.swift in Sources */,
 				EB55033C1BA025FF00A9C125 /* ExamBriefTableViewCell.swift in Sources */,
 				EB55033A1BA0259000A9C125 /* HeaderTableViewCell.swift in Sources */,
+				EB1D2B131BB3EB6B001A1EC2 /* StringExtension.swift in Sources */,
 				EB64BA1B1BAA6D180045C288 /* Answer.swift in Sources */,
 				EB64BA1D1BAA6E800045C288 /* Media.swift in Sources */,
+				EB1D2B151BB3EDE9001A1EC2 /* NSDateExtension.swift in Sources */,
 				EBF5C6EA1BA17445004CE701 /* ListQuestionViewController.swift in Sources */,
 				EB64BA151BAA6C6A0045C288 /* QuestionBrief.swift in Sources */,
 				EB64BA1F1BAA90FD0045C288 /* Question.swift in Sources */,
@@ -522,6 +557,7 @@
 				EBD2717A1BA0325A001BF492 /* ExamDetailTableViewCell.swift in Sources */,
 				EBCAC17C1BA24B1F00317FE8 /* QuestionsDataSource.swift in Sources */,
 				EBC65BF31BA66C6400CB861B /* UserProfile.swift in Sources */,
+				EB5377A91BB51D90001DAF8D /* Converter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

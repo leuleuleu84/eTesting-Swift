@@ -10,6 +10,8 @@ import UIKit
 
 class ExamDetailTVC: UITableViewController {
 
+    var examDetails = ExamDetails()
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 3
     }
@@ -42,6 +44,10 @@ class ExamDetailTVC: UITableViewController {
         if indexPath.section == 0 {
             if indexPath.row == 0 {
                 let headerCell = tableView.dequeueReusableCellWithIdentifier("headerCell", forIndexPath: indexPath) as! HeaderTableViewCell
+                
+                headerCell.labelExamTitle.text = examDetails.examName
+                headerCell.lableValidFrom.text = examDetails.validFrom.toString()
+                headerCell.labelValidTo.text = examDetails.validTo?.toString()
                 return headerCell
             }
 //            else if indexPath.row == 1 {

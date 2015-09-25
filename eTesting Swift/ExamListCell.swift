@@ -11,7 +11,6 @@ import UIKit
 class ExamListCell: UITableViewCell {
     
     @IBOutlet weak var examTitle: UILabel!
-    
     @IBOutlet weak var labelValidFrom: UILabel!
     @IBOutlet weak var labelValidTo: UILabel!
     @IBOutlet weak var labelAmountOfRegister: UILabel!

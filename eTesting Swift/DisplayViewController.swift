@@ -11,6 +11,7 @@ import UIKit
 class DisplayViewController: UIViewController, UISplitViewControllerDelegate {
     
     var user = UserProfile()
+    var examList = [ExamBrief]()
     var splitVC: UISplitViewController!
     var collapseSecondaryViewController: ExamListViewController!
     var primaryViewController: SideBarTableViewController!
@@ -20,12 +21,13 @@ class DisplayViewController: UIViewController, UISplitViewControllerDelegate {
         splitVC = self.childViewControllers[0] as! UISplitViewController
 
         var nav = splitVC.viewControllers as! [UINavigationController]
-        let primaryViewController = nav[0].topViewController as! SideBarTableViewController
+        primaryViewController = nav[0].topViewController as! SideBarTableViewController
 
         primaryViewController.user = user
 
-        let collapseSecondaryViewController = nav[1].topViewController
-        collapseSecondaryViewController!.view.backgroundColor = UIColor.cyanColor()
+        collapseSecondaryViewController = nav[1].topViewController as! ExamListViewController
+
+        collapseSecondaryViewController.examList = examList
         
         performTraitCollectionOverrideForSize(view.bounds.size)
         configureSplitVC()        // Do any additional setup after loading the view.
@@ -48,7 +50,7 @@ class DisplayViewController: UIViewController, UISplitViewControllerDelegate {
         // Set up split view delegate
         let splitVC = self.childViewControllers[0] as! UISplitViewController
         splitVC.delegate = self
-        splitVC.preferredPrimaryColumnWidthFraction = 0.7
+        splitVC.preferredPrimaryColumnWidthFraction = 0.8
         let navVC = splitVC.childViewControllers.last as! UINavigationController
         navVC.topViewController!.navigationItem.leftBarButtonItem = splitVC.displayModeButtonItem()
     }

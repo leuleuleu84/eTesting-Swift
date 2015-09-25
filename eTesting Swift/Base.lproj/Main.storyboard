@@ -120,7 +120,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="headerCell" rowHeight="102" id="aUa-7I-nzd" customClass="HeaderTableViewCell" customModule="eTesting_Swift" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="102"/>
+                                <rect key="frame" x="0.0" y="72" width="600" height="102"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aUa-7I-nzd" id="W8A-7c-34E">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="101.5"/>
@@ -205,7 +205,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="examBriefCell" rowHeight="100" id="ogl-54-QIf" customClass="ExamBriefTableViewCell" customModule="eTesting_Swift" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="194" width="600" height="100"/>
+                                <rect key="frame" x="0.0" y="174" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ogl-54-QIf" id="LsC-dC-Pao">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
@@ -226,7 +226,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="examDetailCell" id="rF4-cZ-dNf" customClass="ExamDetailTableViewCell" customModule="eTesting_Swift" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="294" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="274" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rF4-cZ-dNf" id="E0M-bh-MKT">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -810,32 +810,32 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bài thi tiếng Anh tháng 6" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJ5-1M-pBF" userLabel="lblName">
-                                                    <rect key="frame" x="8" y="8" width="200.5" height="20.5"/>
+                                                    <rect key="frame" x="16" y="8" width="200.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BrK-Wb-fjd" userLabel="imgCalendar">
-                                                    <rect key="frame" x="8" y="28" width="24" height="24"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_calendar" translatesAutoresizingMaskIntoConstraints="NO" id="BrK-Wb-fjd" userLabel="imgCalendar">
+                                                    <rect key="frame" x="16" y="28" width="24" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="GRt-br-q85"/>
                                                         <constraint firstAttribute="width" constant="24" id="YXs-6k-Y8k"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15/07/2015 12:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSc-dp-GIH" userLabel="lblValidFrom">
-                                                    <rect key="frame" x="36" y="32" width="112" height="17"/>
+                                                    <rect key="frame" x="44" y="32" width="112" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15/07/2015 12:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIN-sf-S7U" userLabel="lblValidTo">
-                                                    <rect key="frame" x="166" y="32" width="112" height="17"/>
+                                                    <rect key="frame" x="174" y="32" width="112" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmY-Mj-pcF" userLabel="lblSeparator">
-                                                    <rect key="frame" x="148" y="32" width="18" height="17"/>
+                                                    <rect key="frame" x="156" y="32" width="18" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="18" id="bde-XH-eie"/>
                                                     </constraints>
@@ -843,8 +843,8 @@
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Ab-Ti-u4f" userLabel="imgPerson">
-                                                    <rect key="frame" x="8" y="52" width="24" height="24"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_person" translatesAutoresizingMaskIntoConstraints="NO" id="7Ab-Ti-u4f" userLabel="imgPerson">
+                                                    <rect key="frame" x="16" y="52" width="24" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="oX0-oo-fZZ"/>
                                                         <constraint firstAttribute="width" constant="24" id="rfs-Rx-nTL"/>
@@ -857,13 +857,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1008" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20c-Cs-fSR" userLabel="lblAmountOfRegister">
-                                                    <rect key="frame" x="36" y="56" width="33" height="17"/>
+                                                    <rect key="frame" x="44" y="56" width="33" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thí sinh" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCf-Cc-F8f" userLabel="lblAmountOfRegister">
-                                                    <rect key="frame" x="73" y="56" width="51" height="17"/>
+                                                    <rect key="frame" x="81" y="56" width="51" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -873,7 +873,7 @@
                                                 <constraint firstItem="20c-Cs-fSR" firstAttribute="leading" secondItem="iSc-dp-GIH" secondAttribute="leading" id="02G-TE-oto"/>
                                                 <constraint firstItem="iSc-dp-GIH" firstAttribute="centerY" secondItem="eIN-sf-S7U" secondAttribute="centerY" id="215-RD-DLQ"/>
                                                 <constraint firstItem="qmY-Mj-pcF" firstAttribute="leading" secondItem="iSc-dp-GIH" secondAttribute="trailing" id="FR6-9Z-oLe"/>
-                                                <constraint firstItem="gJ5-1M-pBF" firstAttribute="leading" secondItem="8Ms-bQ-bN7" secondAttribute="leadingMargin" id="IrO-dE-oiD"/>
+                                                <constraint firstItem="gJ5-1M-pBF" firstAttribute="leading" secondItem="8Ms-bQ-bN7" secondAttribute="leadingMargin" constant="8" id="IrO-dE-oiD"/>
                                                 <constraint firstItem="kdM-K3-dcI" firstAttribute="centerY" secondItem="20c-Cs-fSR" secondAttribute="centerY" id="J7p-AY-IvE"/>
                                                 <constraint firstItem="BrK-Wb-fjd" firstAttribute="top" secondItem="gJ5-1M-pBF" secondAttribute="bottom" id="Oyd-1O-ZcI"/>
                                                 <constraint firstItem="gJ5-1M-pBF" firstAttribute="leading" secondItem="7Ab-Ti-u4f" secondAttribute="leading" id="ShU-eL-jb2"/>
@@ -913,6 +913,7 @@
                     <connections>
                         <outlet property="listExams" destination="42B-cf-NmF" id="VUe-ci-eyx"/>
                         <outlet property="searchDisplayController" destination="9eV-vn-aF3" id="YQy-Fc-dku"/>
+                        <segue destination="iBk-Cj-YEj" kind="showDetail" identifier="showExamDetails" id="wBA-9y-OYr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Vb-5S-39J" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -954,7 +955,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" tag="200" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Truong Minh Thang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHs-K3-gcK">
                                             <rect key="frame" x="225.5" y="121" width="149.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -1067,10 +1068,10 @@
             </objects>
             <point key="canvasLocation" x="1212" y="-1304"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--ExamDetail-NAV-->
         <scene sceneID="jdW-cs-Hxx">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iBk-Cj-YEj" sceneMemberID="viewController">
+                <navigationController title="ExamDetail-NAV" automaticallyAdjustsScrollViewInsets="NO" id="iBk-Cj-YEj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mF7-jI-7Ul">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1143,8 +1144,10 @@
     </scenes>
     <resources>
         <image name="bg_profile" width="380" height="170"/>
+        <image name="ic_calendar" width="18" height="18"/>
         <image name="ic_checkbox" width="32" height="32"/>
         <image name="ic_from.png" width="484" height="564"/>
+        <image name="ic_person" width="18" height="18"/>
         <image name="ic_profile" width="89" height="89"/>
         <image name="ic_to.png" width="484" height="564"/>
         <image name="logo.png" width="40" height="40"/>

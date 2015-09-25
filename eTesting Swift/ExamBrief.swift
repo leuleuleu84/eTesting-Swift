@@ -16,13 +16,11 @@ class ExamBrief {
     var validTo: NSDate?
     var maxOfRegister: Int?
     var maxOfAttempts : Int?
-    var typeOfRegistration: TypeOfRegistration = TypeOfRegistration.Disallow
-    
+    var typeOfRegistration: Int = 0
 }
 
-enum TypeOfRegistration {
-    case Disallow
-    case UnderControl
-    case Free
+enum TypeOfRegistration : Int {
+    case Disallow = 0, UnderControl, Free
+    
 }
 

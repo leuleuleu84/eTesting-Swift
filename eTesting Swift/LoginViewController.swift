@@ -32,16 +32,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate, UISplitViewCon
     var displayVC : DisplayViewController! {
         didSet {
             displayVC.user = user
+            displayVC.examList = examList
         }
     }
     
-    var user : UserProfile!     
+    var user : UserProfile!
+    var examList: [ExamBrief]!
     override func viewDidLoad() {
         
         setupInputBox(inputTextUserName)
         setupInputBox(inputTextPassWord)
-        
-        
+        inputTextUserName.text = "thangtm7"
+        inputTextPassWord.text = "dB4-mXB-k4E-JZd"
         
         let tap = UITapGestureRecognizer(target: self, action: "handleTapToEndEditing:")
         view.addGestureRecognizer(tap)
@@ -95,10 +97,33 @@ class LoginViewController: UIViewController, UITextFieldDelegate, UISplitViewCon
         tf.font = UIFont.systemFontOfSize(17);
     }
     
-    func DidLogin (returnedUser: UserProfile) {
-        self.user = returnedUser
+    func didGetExamList (exams: [ExamBrief]) {
+        self.examList = exams
         self.performSegueWithIdentifier("doLogin", sender: self)
     }
+    
+    func didLogin() {
+        eTestingClient.getUserProfile(returnUser: loadData, doWhileLoginFail: reject)
+    }
+    
+    func loadData (returnedUser: UserProfile) {
+        self.user = returnedUser
+        eTestingClient.getExamList(user, returnExamList: didGetExamList)
+
+    }
+    
+    func reject() {
+        let animation = CAKeyframeAnimation()
+        animation.keyPath = "position.x"
+        animation.values = [0, 20, -20, 10, -10, 5, -5, 0 ]
+        animation.keyTimes = [0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1]
+        animation.duration = 0.4
+        animation.additive = true
+        inputTextPassWord.layer.addAnimation(animation, forKey: "Shake")
+        inputTextUserName.layer.addAnimation(animation, forKey: "Shake")
+    }
+    
+    
     
     @IBAction func doLogin(sender: UIButton) {
         
@@ -115,8 +140,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate, UISplitViewCon
             
             self.presentViewController(controller, animated: true, completion: nil)
         }
+        eTestingClient.doLogin(username: username!, password: password!, doWhileLoginFail: reject, Logined: didLogin)
         
-        eTestingClient.getUserProfile(username!, password: password!, callback: DidLogin)
+
         
         
         // In a storyboard-based application, you will often want to do a little preparation before navigation
