@@ -14,13 +14,15 @@ class ExamBrief {
     var examName: String = ""
     var validFrom: NSDate = NSDate()
     var validTo: NSDate?
-    var maxOfRegister: Int?
-    var maxOfAttempts : Int?
-    var typeOfRegistration: Int = 0
-}
-
-enum TypeOfRegistration : Int {
-    case Disallow = 0, UnderControl, Free
+    var maxOfRegisters: Int = 0
+    var maxOfAttempts : Int = 0
+    var typeOfRegistration: TypeOfRegistration = TypeOfRegistration.Disallow
+    
     
 }
+enum TypeOfRegistration : Int {
+    case Disallow = 0, UnderControl, Free
+}
+
+
 

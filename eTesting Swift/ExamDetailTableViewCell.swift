@@ -10,6 +10,10 @@ import UIKit
 
 class ExamDetailTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var labelContent: UILabel!
+    
+    @IBOutlet weak var labelValue: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

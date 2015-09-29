@@ -17,10 +17,10 @@ class ExamDetails: ExamBrief {
     var amountOfRegisters: Int = 0
     var certificate: String = ""
     var registedDate: NSDate?
-    var registrationStatus: RegistrationStatus?
+    var registrationStatus: RegistrationStatus = RegistrationStatus.Unregistered
     var amountOfAttempt: Int = 0
     var lastAttempt: NSDate?
-    var userTestStatus: Int?
+    var userTestStatus: UserTestStatus = UserTestStatus.NotAttempt
     var duration: Int = 0
 
 }

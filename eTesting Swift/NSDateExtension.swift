@@ -8,8 +8,8 @@
 
 import Foundation
 extension NSDate {
-    func toString () -> String? {
-        var result: String?
+    func toString () -> String {
+        var result: String
         let dateFomartter = NSDateFormatter()
         dateFomartter.dateFormat = "yyyy-MM-dd"
         result = dateFomartter.stringFromDate(self)

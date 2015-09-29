@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ExamBriefTableViewCell: UITableViewCell {
+class ExamDescriptionTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var examDescription: UIWebView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

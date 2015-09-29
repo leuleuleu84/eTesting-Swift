@@ -14,7 +14,7 @@ class ExamListViewController: UIViewController, UITableViewDataSource, UITableVi
     var examList = [ExamBrief]()
     var examDetails = ExamDetails()
     
-    var examDetailsVC : ExamDetailTVC! {
+    var examDetailsVC : ExamDetailVC! {
         didSet {
             examDetailsVC.examDetails = examDetails
         }
@@ -43,8 +43,8 @@ class ExamListViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.examTitle.text = examList[indexPath.row].examName
         cell.labelValidFrom.text = examList[indexPath.row].validFrom.toString()
         cell.labelValidTo.text = examList[indexPath.row].validTo?.toString()
-        cell.labelAmountOfRegister.text = "\(examList[indexPath.row].maxOfRegister!)"
-        cell.labelRegisterType.text = Converter.ConvertTypeOfRegisterToString(examList[indexPath.row].typeOfRegistration) 
+        cell.labelAmountOfRegister.text = "\(examList[indexPath.row].maxOfRegisters)"
+        cell.labelRegisterType.text = Converter.convertTypeOfRegisterToString(examList[indexPath.row].typeOfRegistration)
         
         return cell
     }
@@ -68,7 +68,7 @@ class ExamListViewController: UIViewController, UITableViewDataSource, UITableVi
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showExamDetails" {
             let nav = segue.destinationViewController as! UINavigationController
-            examDetailsVC = nav.topViewController as! ExamDetailTVC
+            examDetailsVC = nav.topViewController as! ExamDetailVC
 //            
             nav.navigationItem.leftItemsSupplementBackButton = true
 //            nav.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Action, target: self, action: nil)

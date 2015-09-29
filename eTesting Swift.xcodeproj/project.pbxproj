@@ -8,15 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		EB08B3C51B9ED3E10006536F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08B3C41B9ED3E10006536F /* LoginViewController.swift */; };
+		EB0EF2DF1BB8D5F8004172FC /* MapDtoToUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF2DE1BB8D5F8004172FC /* MapDtoToUserProfile.swift */; settings = {ASSET_TAGS = (); }; };
+		EB0EF2E51BB8D917004172FC /* MapDtoToExamBrief.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF2E41BB8D917004172FC /* MapDtoToExamBrief.swift */; settings = {ASSET_TAGS = (); }; };
+		EB0EF2E71BB8DAA6004172FC /* MapDtoToExamDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0EF2E61BB8DAA6004172FC /* MapDtoToExamDetails.swift */; settings = {ASSET_TAGS = (); }; };
 		EB1141E91BA3DB70001C2BF5 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1141E81BA3DB70001C2BF5 /* HeaderCollectionReusableView.swift */; settings = {ASSET_TAGS = (); }; };
 		EB1555111BA27208001A26ED /* QuestionContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1555101BA27208001A26ED /* QuestionContentCell.swift */; };
+		EB18F3341BBA402F00FA0BF4 /* getExamList+ExamDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18F3331BBA402F00FA0BF4 /* getExamList+ExamDetails.swift */; settings = {ASSET_TAGS = (); }; };
+		EB18F33A1BBA46BB00FA0BF4 /* ConvertExamDetailsToDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18F3391BBA46BB00FA0BF4 /* ConvertExamDetailsToDataSource.swift */; settings = {ASSET_TAGS = (); }; };
 		EB1D2B131BB3EB6B001A1EC2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D2B121BB3EB6B001A1EC2 /* StringExtension.swift */; settings = {ASSET_TAGS = (); }; };
 		EB1D2B151BB3EDE9001A1EC2 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D2B141BB3EDE9001A1EC2 /* NSDateExtension.swift */; settings = {ASSET_TAGS = (); }; };
 		EB214D611BABECA300096555 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB214D601BABECA300096555 /* SideBarTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		EB5377A91BB51D90001DAF8D /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5377A81BB51D90001DAF8D /* Converter.swift */; settings = {ASSET_TAGS = (); }; };
 		EB5503331B9FD5D100A9C125 /* ExamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503321B9FD5D100A9C125 /* ExamListViewController.swift */; };
 		EB5503351BA015A500A9C125 /* ExamListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503341BA015A500A9C125 /* ExamListCell.swift */; };
-		EB5503371BA0212E00A9C125 /* ExamDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503361BA0212E00A9C125 /* ExamDetailTVC.swift */; };
+		EB5503371BA0212E00A9C125 /* ExamDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503361BA0212E00A9C125 /* ExamDetailVC.swift */; };
 		EB55033A1BA0259000A9C125 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5503391BA0259000A9C125 /* HeaderTableViewCell.swift */; };
 		EB55033C1BA025FF00A9C125 /* ExamBriefTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55033B1BA025FF00A9C125 /* ExamBriefTableViewCell.swift */; };
 		EB583D301BAA2D6B00D00FFB /* ExamBrief.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB583D2F1BAA2D6B00D00FFB /* ExamBrief.swift */; settings = {ASSET_TAGS = (); }; };
@@ -120,15 +125,20 @@
 
 /* Begin PBXFileReference section */
 		EB08B3C41B9ED3E10006536F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EB0EF2DE1BB8D5F8004172FC /* MapDtoToUserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDtoToUserProfile.swift; sourceTree = "<group>"; };
+		EB0EF2E41BB8D917004172FC /* MapDtoToExamBrief.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDtoToExamBrief.swift; sourceTree = "<group>"; };
+		EB0EF2E61BB8DAA6004172FC /* MapDtoToExamDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDtoToExamDetails.swift; sourceTree = "<group>"; };
 		EB1141E81BA3DB70001C2BF5 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		EB1555101BA27208001A26ED /* QuestionContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionContentCell.swift; sourceTree = "<group>"; };
+		EB18F3331BBA402F00FA0BF4 /* getExamList+ExamDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "getExamList+ExamDetails.swift"; sourceTree = "<group>"; };
+		EB18F3391BBA46BB00FA0BF4 /* ConvertExamDetailsToDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertExamDetailsToDataSource.swift; sourceTree = "<group>"; };
 		EB1D2B121BB3EB6B001A1EC2 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		EB1D2B141BB3EDE9001A1EC2 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		EB214D601BABECA300096555 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
 		EB5377A81BB51D90001DAF8D /* Converter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		EB5503321B9FD5D100A9C125 /* ExamListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamListViewController.swift; sourceTree = "<group>"; };
 		EB5503341BA015A500A9C125 /* ExamListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamListCell.swift; sourceTree = "<group>"; };
-		EB5503361BA0212E00A9C125 /* ExamDetailTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamDetailTVC.swift; sourceTree = "<group>"; };
+		EB5503361BA0212E00A9C125 /* ExamDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamDetailVC.swift; sourceTree = "<group>"; };
 		EB5503391BA0259000A9C125 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		EB55033B1BA025FF00A9C125 /* ExamBriefTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamBriefTableViewCell.swift; sourceTree = "<group>"; };
 		EB583D2F1BAA2D6B00D00FFB /* ExamBrief.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamBrief.swift; sourceTree = "<group>"; };
@@ -191,6 +201,9 @@
 		EB1D2B0B1BB3E4EE001A1EC2 /* MapDtoToModel */ = {
 			isa = PBXGroup;
 			children = (
+				EB0EF2DE1BB8D5F8004172FC /* MapDtoToUserProfile.swift */,
+				EB0EF2E41BB8D917004172FC /* MapDtoToExamBrief.swift */,
+				EB0EF2E61BB8DAA6004172FC /* MapDtoToExamDetails.swift */,
 			);
 			name = MapDtoToModel;
 			sourceTree = "<group>";
@@ -199,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				EB5377A81BB51D90001DAF8D /* Converter.swift */,
+				EB18F3391BBA46BB00FA0BF4 /* ConvertExamDetailsToDataSource.swift */,
 			);
 			name = Converter;
 			sourceTree = "<group>";
@@ -215,7 +229,7 @@
 		EB5503381BA0213400A9C125 /* ExamDetail */ = {
 			isa = PBXGroup;
 			children = (
-				EB5503361BA0212E00A9C125 /* ExamDetailTVC.swift */,
+				EB5503361BA0212E00A9C125 /* ExamDetailVC.swift */,
 				EB5503391BA0259000A9C125 /* HeaderTableViewCell.swift */,
 				EB55033B1BA025FF00A9C125 /* ExamBriefTableViewCell.swift */,
 				EBD271791BA0325A001BF492 /* ExamDetailTableViewCell.swift */,
@@ -241,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				EBD1CB6F1BA9610000B749E6 /* eTestingClient.swift */,
+				EB18F3331BBA402F00FA0BF4 /* getExamList+ExamDetails.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -530,6 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB1141E91BA3DB70001C2BF5 /* HeaderCollectionReusableView.swift in Sources */,
+				EB18F33A1BBA46BB00FA0BF4 /* ConvertExamDetailsToDataSource.swift in Sources */,
 				EB583D301BAA2D6B00D00FFB /* ExamBrief.swift in Sources */,
 				EBD1CB701BA9610000B749E6 /* eTestingClient.swift in Sources */,
 				EB55033C1BA025FF00A9C125 /* ExamBriefTableViewCell.swift in Sources */,
@@ -537,20 +553,24 @@
 				EB1D2B131BB3EB6B001A1EC2 /* StringExtension.swift in Sources */,
 				EB64BA1B1BAA6D180045C288 /* Answer.swift in Sources */,
 				EB64BA1D1BAA6E800045C288 /* Media.swift in Sources */,
+				EB0EF2E51BB8D917004172FC /* MapDtoToExamBrief.swift in Sources */,
 				EB1D2B151BB3EDE9001A1EC2 /* NSDateExtension.swift in Sources */,
 				EBF5C6EA1BA17445004CE701 /* ListQuestionViewController.swift in Sources */,
 				EB64BA151BAA6C6A0045C288 /* QuestionBrief.swift in Sources */,
 				EB64BA1F1BAA90FD0045C288 /* Question.swift in Sources */,
+				EB0EF2E71BB8DAA6004172FC /* MapDtoToExamDetails.swift in Sources */,
 				EB9A5E7B1BA2ABB400F801BA /* AnswerOptionCell.swift in Sources */,
 				EB5503351BA015A500A9C125 /* ExamListCell.swift in Sources */,
 				EBEF1D481B9EB3BB00C70830 /* ViewController.swift in Sources */,
 				EB1555111BA27208001A26ED /* QuestionContentCell.swift in Sources */,
 				EBD1CB761BA97C6A00B749E6 /* ExamDetails.swift in Sources */,
 				EB5503331B9FD5D100A9C125 /* ExamListViewController.swift in Sources */,
+				EB0EF2DF1BB8D5F8004172FC /* MapDtoToUserProfile.swift in Sources */,
 				EBEF1D4E1B9EB3BB00C70830 /* eTesting_Swift.xcdatamodeld in Sources */,
 				EB9AE2421BB0F46900573A08 /* DisplayViewController.swift in Sources */,
 				EBF5C6F11BA1833F004CE701 /* MenuViewController.swift in Sources */,
-				EB5503371BA0212E00A9C125 /* ExamDetailTVC.swift in Sources */,
+				EB18F3341BBA402F00FA0BF4 /* getExamList+ExamDetails.swift in Sources */,
+				EB5503371BA0212E00A9C125 /* ExamDetailVC.swift in Sources */,
 				EB214D611BABECA300096555 /* SideBarTableViewController.swift in Sources */,
 				EB08B3C51B9ED3E10006536F /* LoginViewController.swift in Sources */,
 				EBEF1D461B9EB3BB00C70830 /* AppDelegate.swift in Sources */,
